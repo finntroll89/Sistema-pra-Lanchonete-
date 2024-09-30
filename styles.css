@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+.menu-scroll, .order-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+}
+
+.menu-item img {
+    width: 120px;         /* Defina uma largura fixa */
+    height: 120px;        /* Defina uma altura fixa */
+    object-fit: cover;    /* Isso ajusta a imagem sem distorcer, cortando se necessário */
+    border-radius: 6px;   /* Mantém as bordas arredondadas */
+    background-color: #f4f4f4; /* Cor de fundo */
+}
+
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff !important;
+}
+
+header {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-scroll, .order-scroll {
+    max-height: 400px; /* Limite a altura */
+    overflow-y: scroll !important; /* Forçar a barra de rolagem sempre */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff; /* Melhorar a visualização */
+}
+
+
+.card-header {
+    background-color: #333; /* Cor de fundo unificada (alterar conforme preferência) */
+    color: #fff; /* Cor do texto */
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+
+.cart-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000; /* Garante que o popup fique acima de outros elementos */
+        display: none; /* Inicialmente escondido */
+    }
+    
+    .cart-popup.show {
+        display: block; /* Exibe o popup quando for chamado */
+    }
+    
+
+    .d-none {
+        display: none;
+    }
+    
+
